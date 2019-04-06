@@ -1,0 +1,21 @@
+{
+  "name": "gatsby-transformer-ndjson",
+  "version": "1.0.0",
+  "description": "A Gatsby transformer that creates nodes from each entry in ndjson files.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juice49/gatsby-transformer-ndjson.git"
+  },
+  "author": "Ash",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/juice49/gatsby-transformer-ndjson/issues"
+  },
+  "homepage": "https://github.com/juice49/gatsby-transformer-ndjson#readme",
+  "dependencies": {
+    "funstream": "^4.1.1"
+  }
+}
