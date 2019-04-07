@@ -1,7 +1,7 @@
 const fs = require('fs')
 const fun = require('funstream')
 
-exports.onCreateNode = async ({ node, actions }) => {
+exports.onCreateNode = async ({ node, actions, createContentDigest }) => {
   if (node.extension !== `ndjson`) {
     return
   }
@@ -11,6 +11,7 @@ exports.onCreateNode = async ({ node, actions }) => {
     .forEach(item => actions.createNode({
       ...item,
       internal: {
+        contentDigest: createContentDigest(item),
         type: node.sourceInstanceName
       }
     }))
